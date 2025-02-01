@@ -182,7 +182,7 @@ Error: "No such file or directory"
 - Ensure GIT_REPO_PATH in .env contains the absolute path to your repository
 - Verify the path exists and is accessible
 
-### Permissions of files changed to root
+### Permissions of files changed to root after website deploy
 
 Git will run as root in it's container. You can either remember to use `make set-perms` or you add/append to your project a `.get/hooks/post-checkout` file containing:
 
