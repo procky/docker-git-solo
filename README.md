@@ -63,6 +63,7 @@ make setup-env NAME=mysite-dev     # Uses mysite-dev.env
 # My website production setup
 make setup-env NAME=mysite-prod    # Uses mysite-prod.env
 # Now use make with this repo...
+```
 
 ## Optional - Verify your install
 
@@ -116,7 +117,14 @@ make commit message="Update documentation"
 make push-changes
 ```
 
-5. Deploy to GitHub Pages:
+OPTIONAL WEBSITE DEPLOY
+
+5. Build the site
+```bash
+make build-simple
+```
+
+6. Deploy to GitHub Pages:
 ```bash
 make deploy-changes
 ```

@@ -175,7 +175,6 @@ fix-perms:
 # Command: make status - Show the working tree status
 .PHONY: status
 status:
-	$(call log,"testing log")
 	$(DOCKER_GIT) -c safe.directory=/repo status
 
 # Show git log
